@@ -1,6 +1,6 @@
-import { Box, Container, Flex, Heading, Input, InputGroup, InputLeftElement, SimpleGrid, Text, VStack, Avatar, IconButton } from "@chakra-ui/react";
-import { SearchIcon, HamburgerIcon } from "@chakra-ui/icons";
-import notesLogo from "../../public/images/notes-logo.png";
+import { Box, Container, Heading, Input, InputGroup, InputLeftElement, SimpleGrid, Text } from "@chakra-ui/react";
+import { SearchIcon } from "@chakra-ui/icons";
+import Navbar from "../components/Navbar.jsx";
 
 const notes = [
   {
@@ -32,17 +32,7 @@ const notes = [
 const Index = () => {
   return (
     <Container maxW="container.xl" py={10}>
-      <Flex justify="space-between" align="center" mb={10}>
-        <Flex align="center">
-          <img src={notesLogo} alt="Notes Logo" width="50" height="50" />
-          <Heading as="h1" size="lg" ml={3} color="purple.500">Notes</Heading>
-        </Flex>
-        <Flex align="center">
-          <Text mr={4}>Puneet Shakya</Text>
-          <Avatar name="Puneet Shakya" src="https://bit.ly/broken-link" />
-          <IconButton aria-label="Menu" icon={<HamburgerIcon />} ml={4} />
-        </Flex>
-      </Flex>
+      <Navbar />
       <InputGroup mb={10}>
         <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
         <Input type="text" placeholder="Search notes" />
