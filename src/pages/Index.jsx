@@ -1,6 +1,6 @@
 import { Box, Container, Flex, Heading, Input, InputGroup, InputLeftElement, SimpleGrid, Text, VStack, Avatar, IconButton } from "@chakra-ui/react";
 import { SearchIcon, HamburgerIcon } from "@chakra-ui/icons";
-import notesLogo from "../public/images/notes-logo.png";
+import notesLogo from "../../public/images/notes-logo.png";
 
 const notes = [
   {
